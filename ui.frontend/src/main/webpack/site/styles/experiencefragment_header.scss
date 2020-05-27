@@ -4,6 +4,7 @@
 header.experiencefragment {
     padding: .5em 1em;
     border-bottom: 1px solid $color-foreground;
+    background-color: red;
 
     @media (prefers-color-scheme: dark) {
         border-bottom-color: $color-foreground-dark;

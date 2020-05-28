@@ -4,11 +4,12 @@
         <div class="cmp-card__image"
             data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
         </div>
-
-        <p class="cmp-card__date"
-        data-sly-test="${properties.date}">${properties.date}<!-- Include the occupations --></p>
-        <h2 class="cmp-card__title"
-            data-sly-test="${properties.title}">${properties.title}<!-- Include the name --></h2>
-        <span class="cmp-card__tag"data-sly-test="${properties.tag}">${properties.tag}<!-- Include the occupations --></span>
+        <div class="cmp-card__text--content">
+            <p class="cmp-card__date"
+            data-sly-test="${properties.date}">${properties.date}<!-- Include the occupations --></p>
+            <h2 class="cmp-card__title"
+                data-sly-test="${properties.title}">${properties.title}<!-- Include the name --></h2>
+            <span class="cmp-card__tag"data-sly-test="${properties.tag}">${properties.tag}<!-- Include the occupations --></span>
+        </div>
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
